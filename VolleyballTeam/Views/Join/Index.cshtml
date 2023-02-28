@@ -1,0 +1,46 @@
+﻿@model Join
+@{
+    ViewData["Title"] = "Заявка на вступ в нашу волейбольну команду";
+}
+
+<h1>Заявка на вступ до нашої волейбольної команди</h1>
+
+<form method="post" asp-controller="Join" asp-action="Check">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+
+    <label asp-for="Surname"></label>
+    <input asp-for="Surname" />
+    <span asp-validation-for="Surname"></span>
+
+    <label asp-for="Sex"></label>
+    <input asp-for="Sex" />
+    <span asp-validation-for="Sex"></span>
+
+    <label asp-for="Age"></label>
+    <input asp-for="Age" />
+    <span asp-validation-for="Age"></span>
+
+    <label asp-for="Phone"></label>
+    <input asp-for="Phone" />
+    <span asp-validation-for="Phone"></span>
+
+    <label asp-for="Email"></label>
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span>
+
+    <label asp-for="Height"></label>
+    <input asp-for="Height" />
+    <span asp-validation-for="Height"></span>
+
+    <label asp-for="Weight"></label>
+    <input asp-for="Weight" />
+    <span asp-validation-for="Weight"></span>
+
+    <label asp-for="Comment"></label>
+    <input asp-for="Comment" />
+    <span asp-validation-for="Comment"></span>
+
+    <input type="submit" value="Надіслати заявку" />
+</form>
